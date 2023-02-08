@@ -10,6 +10,7 @@ Start:
 ; Clear memory VRAM
     ld hl, $8000
 
+    xor a
 .clearVRAMLoop
     ldi [hl], a
     bit 5, h
